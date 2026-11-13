@@ -1,0 +1,33 @@
+# Licenses of the files that cannot carry an SPDX header (REUSE specification).
+# Every other file states its license in its own header.
+version = 1
+
+[[annotations]]
+path = ["src/launcher/prisma.ico"]
+SPDX-FileCopyrightText = "2026 Flay Krunegan"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = ["packaging/README.txt", "packaging/README-linux.txt", ".github/pull_request_template.md"]
+SPDX-FileCopyrightText = "2026 Flay Krunegan"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["packaging/THIRD_PARTY_NOTICES.txt"]
+SPDX-FileCopyrightText = "2026 Flay Krunegan"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["third_party/imgui/**"]
+SPDX-FileCopyrightText = "2014-2026 Omar Cornut"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["third_party/miniaudio/miniaudio.h", "third_party/miniaudio/LICENSE"]
+SPDX-FileCopyrightText = "2025 David Reid"
+SPDX-License-Identifier = "MIT-0 OR Unlicense"
+
+[[annotations]]
+path = ["third_party/miniaudio/stb_vorbis.c"]
+SPDX-FileCopyrightText = "2017 Sean Barrett"
+SPDX-License-Identifier = "MIT OR Unlicense"

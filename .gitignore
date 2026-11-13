@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Flay Krunegan
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Build output (build.bat and build.sh)
+build/
+build-linux/
+
+# Release archives: published as GitHub Releases, not stored in the repository
+packaging/*.zip
+packaging/*.tar.gz
+
+# Tests: local files (captures, personal configurations) kept out of the repository
+tests/local/
+
+# What Prisma writes when run from the source folder
+logs/
+prisma.ini
+luanti_prisma.conf
+luanti_prisma.start
+*.tmp

@@ -1,0 +1,36 @@
+// SPDX-FileCopyrightText: 2026 Flay Krunegan
+// SPDX-License-Identifier: GPL-3.0-or-later
+// prisma.exe resources: manifest, icon and version information
+#include <windows.h>
+#include "common/version.hpp"
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "prisma.manifest"
+
+// The icon: a cut gem with the colors of the spectrum (ID 1 is used by window_win32.cpp)
+1 ICON "prisma.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION PRISMA_VERSION_RC
+PRODUCTVERSION PRISMA_VERSION_RC
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE 0
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "0C0A04B0"
+		BEGIN
+			VALUE "FileDescription", "Prisma - shader loader for Luanti"
+			VALUE "FileVersion", PRISMA_VERSION
+			VALUE "ProductName", "Prisma"
+			VALUE "ProductVersion", PRISMA_VERSION
+			VALUE "OriginalFilename", "prisma.exe"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0C0A, 1200
+	END
+END

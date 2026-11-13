@@ -1,0 +1,29 @@
+/* SPDX-FileCopyrightText: 2026 Flay Krunegan */
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/* libprisma_core.so exports only the symbols it intercepts (platform_linux.cpp) */
+{
+	global:
+		SDL_GL_GetProcAddress;
+		SDL_GL_SwapWindow;
+		SDL_GL_SetAttribute;
+		SDL_GL_CreateContext;
+		SDL_PollEvent;
+		SDL_SetRelativeMouseMode;
+		SDL_ShowCursor;
+		SDL_WarpMouseInWindow;
+		glDrawElements;
+		glDrawArrays;
+		glClear;
+		glViewport;
+		glBindTexture;
+		glTexImage2D;
+		glDeleteTextures;
+		glEnable;
+		glDisable;
+		glCullFace;
+		glFrontFace;
+		glDrawBuffer;
+		glReadBuffer;
+	local:
+		*;
+};
